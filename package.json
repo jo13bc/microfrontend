@@ -1,0 +1,15 @@
+{
+  "name": "mocrofrontend",
+  "version": "1.0.0",
+  "description": "Microfrontend",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "author": "José Beita",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mustache": "^4.2.0",
+    "navigo": "^8.11.1"
+  }
+}
