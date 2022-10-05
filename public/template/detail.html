@@ -21,7 +21,7 @@
       </div>
       <div class="row mb-3">
         <div class="col">
-          <h5>Detalle de Pelicula</h5>
+          <h5>Detalle de Director</h5>
         </div>
       </div>
       <div class="row">
@@ -38,29 +38,37 @@
               />
             </div>
             <div class="input-group mb-3">
-              <label class="input-group-text" for="directorId">Director</label>
-              {{#director}}
-              <a
-                id="directorId"
+              <label class="input-group-text" for="birth_year">Fecha nacimiento</label>
+              <input
                 class="form-control"
-                href="https://director-microsite.netlify.app/?id={{id}}"
+                id="birth_year"
+                type="text"
+                value="{{ birth_year }}"
                 readonly
-                >{{name}}</a
-              >
-              {{/director}}
+              />
+            </div>
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="nationality">Nacionalidad</label>
+              <input
+                class="form-control"
+                id="nationality"
+                type="text"
+                value="{{ nationality }}"
+                readonly
+              />
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <h5>Estudios</h5>
+              <h5>Películas</h5>
               <ul class="list-group list-group-flush">
-                {{#studies}}
+                {{#movies}}
                 <a
                   class="list-group-item"
-                  href="https://study-microsite.netlify.app/?id={{id}}"
+                  href="https://movie-microsite.netlify.app/?id={{id}}"
                   >{{name}}</a
                 >
-                {{/studies}}
+                {{/movies}}
               </ul>
             </div>
           </div>
