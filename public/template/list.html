@@ -1,9 +1,23 @@
 <div class="row">
-  <h3 style="margin-top: 15px">Información de Directores</h3>
-  <p>En esta sección se muestra la información de los directores de las películas</p>
+  <h3 style="margin-top: 15px">Información de Estudios</h3>
+  <p>
+    En esta sección se muestra la información de los estudios de las películas
+  </p>
   <ul class="list-group list-group-flush">
     {{#.}}
-    <a class="list-group-item" href="/?id={{ id }}" data-navigo> {{ name }}</a>
+    <a class="list-group-item" href="/?id={{ id }}" data-navigo>
+      <div class="row">
+        <div class="col-1">
+          <img
+            src="images/{{image}}"
+            class="rounded-circle mx-auto d-block"
+            width="30"
+            height="30"
+          />
+        </div>
+        <div class="col">{{ name }}</div>
+      </div>
+    </a>
     {{/.}}
   </ul>
 </div>
